@@ -7,8 +7,6 @@
 
 import type { RawDeparture, RawStation } from "../types";
 
-const BASE_URL = "https://v6.db.transport.rest";
-
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function searchStations(_query: string): Promise<RawStation[]> {
   throw new Error("Not implemented");
