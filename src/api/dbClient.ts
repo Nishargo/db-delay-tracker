@@ -4,7 +4,7 @@
  * Responsibility: ALL communication with the Deutsche Bahn API lives here.
  * Nothing outside this folder should make direct HTTP calls.
  *
- * This keeps your API logic in one place — easy to mock in tests,
+ * This keeps API logic in one place — easy to mock in tests,
  * easy to swap if the API changes.
  */
 
@@ -13,7 +13,7 @@ import type { RawDeparture, RawStation } from "../types";
 
 const BASE_URL = "https://v6.db.transport.rest";
 
-const client = axios.create({
+const _client = axios.create({
   baseURL: BASE_URL,
   timeout: 10000,
 });
